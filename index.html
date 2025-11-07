@@ -1,11 +1,236 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>Welcome to My Site</title>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Theta Beta — Project Showcase</title>
+    <meta name="description" content="Theta Beta final project showcase" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css?v=3" />
 </head>
 <body>
-<h1>Hello! 👋</h1>
-<p>Welcome to my GitHub Pages website.</p>
+<!-- Header -->
+<header class="site-header">
+    <div class="container nav">
+        <a class="brand" href="#top">Theta Beta</a>
+        <nav class="nav-links" aria-label="Primary">
+            <a href="#about">About</a>
+            <a href="#board">Our Board</a>
+            <a href="#work">Showcase</a>
+            <a href="#team">Committee</a>
+        </nav>
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+    <nav id="mobile-menu" class="mobile-menu" hidden>
+        <a href="#about">About</a>
+        <a href="#board">Our Board</a>
+        <a href="#work">Showcase</a>
+        <a href="#team">Committee</a>
+    </nav>
+</header>
+
+<main id="top">
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container hero-inner">
+            <div class="hero-copy">
+                <h1>Theta Beta<br><span class="accent">Final Project</span></h1>
+                <p class="lead">Sample text placeholder</p>
+                <div class="hero-actions">
+                    <a href="#work" class="btn">View Showcase</a>
+                    <a href="#board" class="btn btn-outline">Meet the Board</a>
+                    <a href="#team" class="btn btn-outline">Committee</a>
+                </div>
+            </div>
+            <div class="hero-media" role="img" aria-label="Project collage">
+                <img src="https://images.unsplash.com/photo-1557800636-894a64c1696f?q=80&w=1400&auto=format&fit=crop" alt="Abstract technology background" />
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+        <div class="container two-col">
+            <div>
+                <h2>About the Project</h2>
+                <p>Briefly explain the challenge, your approach, and the result. Problem → insight → solution → impact.</p>
+                <ul class="bullets">
+                    <li><strong>Problem:</strong> What were we solving?</li>
+                    <li><strong>Approach:</strong> Methods, tools, or research.</li>
+                    <li><strong>Outcome:</strong> Metrics, learnings, or next steps.</li>
+                </ul>
+            </div>
+            <aside class="info-card">
+                <h3>Quick Facts</h3>
+                <dl>
+                    <dt>Chapter Name</dt><dd>Theta Beta</dd>
+                    <dt>Majors</dt><dd>Fall 2025</dd>
+                    <dt>placeholder</dt><dd>place holder</dd>
+                </dl>
+            </aside>
+        </div>
+    </section>
+
+    <!-- Our Board (with photos) -->
+    <section id="board" class="section">
+        <div class="container">
+            <div class="section-head">
+                <h2>Our Board</h2>
+                <p>Meet the leaders guiding our Theta Beta chapter.</p>
+            </div>
+
+            <ul class="team board-grid">
+                <li class="person">
+                    <img src="photos/nancy.png" alt="Nancy Godinez">
+                    <div>
+                        <h3>Nancy Godinez</h3>
+                        <p class="role">President</p>
+                    </div>
+                </li>
+                <li class="person">
+                    <img src="photos/sehaj.png" alt="Sehajpreet Kaur">
+                    <div>
+                        <h3>Sehajpreet Kaur</h3>
+                        <p class="role">Vice President</p>
+                    </div>
+                </li>
+                <li class="person">
+                    <img src="photos/ethan.png" alt="Ethan Workman">
+                    <div>
+                        <h3>Ethan Workman</h3>
+                        <p class="role">Treasurer</p>
+                    </div>
+                </li>
+                <li class="person">
+                    <img src="photos/scribe.png" alt="Scribe">
+                    <div>
+                        <h3>Name</h3>
+                        <p class="role">Scribe</p>
+                    </div>
+                </li>
+                <li class="person">
+                    <img src="photos/javier.png" alt="Javier Miramontes">
+                    <div>
+                        <h3>Javier Miramontes</h3>
+                        <p class="role">Historian</p>
+                    </div>
+                </li>
+                <li class="person">
+                    <img src="photos/roberto.png" alt="Roberto Sosa">
+                    <div>
+                        <h3>Roberto Sosa</h3>
+                        <p class="role">Secretary</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Showcase -->
+    <section id="work" class="section alt">
+        <div class="container">
+            <div class="section-head">
+                <h2>Showcase</h2>
+                <p>Drop in screenshots, demos, or write-ups.</p>
+            </div>
+
+            <div class="grid">
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=1200&auto=format&fit=crop" alt="Project screenshot 1" />
+                    <div class="card-body">
+                        <h3>Feature One</h3>
+                        <p>Short description of what this shows and why it matters.</p>
+                        <a class="card-link" href="#">Read more →</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1551281044-8d8a9c86536b?q=80&w=1200&auto=format&fit=crop" alt="Project screenshot 2" />
+                    <div class="card-body">
+                        <h3>Feature Two</h3>
+                        <p>Highlight a graph, result, or unique interaction.</p>
+                        <a class="card-link" href="#">Read more →</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop" alt="Project screenshot 3" />
+                    <div class="card-body">
+                        <h3>Feature Three</h3>
+                        <p>Another cool component or insight from your project.</p>
+                        <a class="card-link" href="#">Read more →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Structure -->
+    <section id="teams" class="section alt">
+        <div class="container">
+            <div class="section-head">
+                <h2>Team Structure</h2>
+                <p>Here’s how our chapter divided responsibilities across project teams.</p>
+            </div>
+
+            <div class="team-grid">
+                <!-- Fundraising Team -->
+                <div class="team-card">
+                    <h3>Fundraising Team</h3>
+                    <p><strong>Members:</strong> Ethan, Nancy, Jimin, Sehaj</p>
+                    <ul>
+                        <li><strong>Food Handlers:</strong> Nancy, Sehaj, Ethan</li>
+                        <li><strong>Tabling People (Tuesdays 11–1:30 PM):</strong> Availability needed</li>
+                        <li><strong>Community Outreach & Forms:</strong> Nancy, Jimin</li>
+                        <li><strong>Gathering Supplies:</strong> Ethan, Roberto, Jaden</li>
+                        <li><strong>Advertising:</strong> Ethan, Sehaj</li>
+                    </ul>
+                </div>
+
+                <!-- Design Team -->
+                <div class="team-card">
+                    <h3>Design Team</h3>
+                    <p><strong>Members:</strong> Sehaj, Javier</p>
+                    <ul>
+                        <li><strong>Solidworks:</strong> Sehaj</li>
+                        <li><strong>Statics:</strong> Javier, Sehaj</li>
+                        <li><strong>Measurements:</strong> Javier</li>
+                        <li><strong>Materials Research + Weatherproofing:</strong> Sehaj, Javier</li>
+                    </ul>
+                </div>
+
+                <!-- Assembly Team -->
+                <div class="team-card">
+                    <h3>Assembly Team</h3>
+                    <p><strong>Members:</strong> Roberto, Jimin, Jaden</p>
+                    <ul>
+                        <li><strong>Components + Circuits:</strong> Roberto, Javier</li>
+                        <li><strong>Coding:</strong> Jaden, Jimin</li>
+                    </ul>
+                </div>
+
+                <!-- Building Team -->
+                <div class="team-card">
+                    <h3>Building Team</h3>
+                    <p><strong>All members</strong> are encouraged to help</p>
+                    <ul>
+                        <li><strong>Equipment for Building:</strong> Roberto, Ethan</li>
+                        <li><strong>Transportation:</strong> Roberto</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="site-footer">
+    <div class="container footer-inner">
+        <p>© <span id="year"></span> Theta Beta • Built for our final project</p>
+        <a href="#top" class="to-top" aria-label="Back to top">↑</a>
+    </div>
+</footer>
+
+<script src="./script.js?v=3"></script>
 </body>
 </html>
