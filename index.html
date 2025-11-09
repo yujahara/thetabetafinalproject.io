@@ -5,11 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Theta Beta — Project Showcase</title>
     <meta name="description" content="Theta Beta final project showcase" />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css?v=3" />
+
+    <!-- Preload hero image (optional perf) -->
+    <link rel="preload" as="image"
+          href="https://images.unsplash.com/photo-1557800636-894a64c1696f?q=80&w=1400&auto=format&fit=crop"
+          imagesrcset="
+          https://images.unsplash.com/photo-1557800636-894a64c1696f?q=80&w=900 900w,
+          https://images.unsplash.com/photo-1557800636-894a64c1696f?q=80&w=1400 1400w"
+          imagesizes="(max-width: 900px) 100vw, 50vw" />
+
+    <link rel="stylesheet" href="./styles.css?v=5" />
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
+
 <!-- Header -->
 <header class="site-header">
     <div class="container nav">
@@ -18,9 +31,11 @@
             <a href="#about">About</a>
             <a href="#board">Our Board</a>
             <a href="#work">Showcase</a>
+            <a href="#fundraisers">Fundraisers</a>
+            <a href="#timeline">Timeline</a>
             <a href="#team">Committee</a>
         </nav>
-        <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" type="button">
             <span></span><span></span><span></span>
         </button>
     </div>
@@ -28,27 +43,33 @@
         <a href="#about">About</a>
         <a href="#board">Our Board</a>
         <a href="#work">Showcase</a>
+        <a href="#fundraisers">Fundraisers</a>
+        <a href="#timeline">Timeline</a>
         <a href="#team">Committee</a>
     </nav>
 </header>
 
-<main id="top">
+<main id="top" id="main">
     <!-- Hero -->
     <section class="hero">
         <div class="container hero-inner">
             <div class="hero-copy">
-                <h1>Theta Beta<br><span class="accent">Final Project</span></h1>
-                <p class="lead">Sample text placeholder</p>
+                <h1>Theta Beta<br><span class="accent">Plug to Unplug Bench</span></h1>
+                <p class="lead">Creating a community space that promotes wellness, collaboration, and hands-on engineering.</p>
                 <div class="hero-actions">
                     <a href="#work" class="btn">View Showcase</a>
-                    <a href="#board" class="btn btn-outline">Meet the Board</a>
+                    <a href="#board" class="btn btn-outline">Meet the Team</a>
                     <a href="#team" class="btn btn-outline">Committee</a>
                 </div>
             </div>
-            <div class="hero-media" role="img" aria-label="Project collage">
-                <img src="https://images.unsplash.com/photo-1557800636-894a64c1696f?q=80&w=1400&auto=format&fit=crop" alt="Abstract technology background" />
+            <div class="hero-media">
+                <img
+                        src="photos/coverimage.png"
+                        alt="Theta Beta project cover image"
+                        width="1400" height="940"
+                        loading="eager"
+                        decoding="async" />
             </div>
-        </div>
     </section>
 
     <!-- About -->
@@ -56,78 +77,159 @@
         <div class="container two-col">
             <div>
                 <h2>About the Project</h2>
-                <p>Briefly explain the challenge, your approach, and the result. Problem → insight → solution → impact.</p>
+                <p>
+                    Our potential chapter designed and built an outdoor communal space to support student wellness and collaboration.
+                    The project utilized the combination of research, engineering, fundraising, and construction to deliver a practical, durable, eco-friendly solution.
+                </p>
                 <ul class="bullets">
-                    <li><strong>Problem:</strong> What were we solving?</li>
-                    <li><strong>Approach:</strong> Methods, tools, or research.</li>
-                    <li><strong>Outcome:</strong> Metrics, learnings, or next steps.</li>
+                    <li><strong>Goal #1:</strong> Provide students with a space for outdoor study and relaxation, promoting mental wellness and a healthy balance between academic and social life.</li>
+                    <li><strong>Goal #2:</strong> To create a new communal space in a community that encourages people to gather, connect, and collaborate, thereby strengthening the overall community.</li>
+                    <li><strong>Goal #3:</strong> To showcase the professionalism and technical skills of our class by successfully managing a complete engineering project from start to finish.</li>
                 </ul>
             </div>
-            <aside class="info-card">
-                <h3>Quick Facts</h3>
+
+            <aside class="info-card" aria-labelledby="quick-facts">
+                <h3 id="quick-facts">Quick Facts</h3>
                 <dl>
                     <dt>Chapter Name</dt><dd>Theta Beta</dd>
-                    <dt>Majors</dt><dd>Fall 2025</dd>
-                    <dt>placeholder</dt><dd>place holder</dd>
+                    <dt>Semester</dt><dd>Fall 2025</dd>
+                    <dt>Project Type</dt><dd>Community Engineering &amp; Design</dd>
                 </dl>
+
+                <hr style="margin:16px 0; border:none; border-top:1px solid rgba(0,0,0,.1)" />
+
+                <h4 style="margin-bottom:6px;">Incorporation of Majors</h4>
+                <table class="majors-table">
+                    <thead>
+                    <tr><th>Major</th><th>Contribution</th></tr>
+                    </thead>
+                    <tbody>
+                    <tr><td>CSE</td><td>Energy management and programming</td></tr>
+                    <tr><td>Civil - E</td><td>2D sketches and diagrams</td></tr>
+                    <tr><td>Bio - E</td><td>Ergonomics and user comfort</td></tr>
+                    <tr><td>Electrical E</td><td>Power banks, solar panels, wiring</td></tr>
+                    <tr><td>Mech E</td><td>Ports, 3D designs (SolidWorks), materials, assembly of parts</td></tr>
+                    <tr><td>Applied Math</td><td>Measurements of parts</td></tr>
+                    </tbody>
+                </table>
+
+                <p style="font-size:0.9rem; color:var(--muted); margin-top:10px;">
+                    We also acknowledge the efforts of our former potential members in Applied Math who contributed to measurement calculations.
+                </p>
             </aside>
         </div>
     </section>
 
-    <!-- Our Board (with photos) -->
+    <!-- Our Board -->
     <section id="board" class="section">
         <div class="container">
             <div class="section-head">
-                <h2>Our Board</h2>
+                <h2>Our Team</h2>
                 <p>Meet the leaders guiding our Theta Beta chapter.</p>
             </div>
 
             <ul class="team board-grid">
                 <li class="person">
-                    <img src="photos/nancy.png" alt="Nancy Godinez">
+                    <img src="photos/nancy.png" alt="Nancy Godinez" width="144" height="144" loading="lazy">
                     <div>
                         <h3>Nancy Godinez</h3>
-                        <p class="role">President</p>
+                        <p class="role">President &amp; Scribe</p>
                     </div>
                 </li>
                 <li class="person">
-                    <img src="photos/sehaj.png" alt="Sehajpreet Kaur">
+                    <img src="photos/sehaj.png" alt="Sehajpreet Kaur" width="144" height="144" loading="lazy">
                     <div>
                         <h3>Sehajpreet Kaur</h3>
                         <p class="role">Vice President</p>
                     </div>
                 </li>
                 <li class="person">
-                    <img src="photos/ethan.png" alt="Ethan Workman">
+                    <img src="photos/ethan.png" alt="Ethan Workman" width="144" height="144" loading="lazy">
                     <div>
                         <h3>Ethan Workman</h3>
                         <p class="role">Treasurer</p>
                     </div>
                 </li>
                 <li class="person">
-                    <img src="photos/scribe.png" alt="Scribe">
-                    <div>
-                        <h3>Name</h3>
-                        <p class="role">Scribe</p>
-                    </div>
-                </li>
-                <li class="person">
-                    <img src="photos/javier.png" alt="Javier Miramontes">
+                    <img src="photos/javier.png" alt="Javier Miramontes" width="144" height="144" loading="lazy">
                     <div>
                         <h3>Javier Miramontes</h3>
                         <p class="role">Historian</p>
                     </div>
                 </li>
                 <li class="person">
-                    <img src="photos/roberto.png" alt="Roberto Sosa">
+                    <img src="photos/roberto.png" alt="Roberto Sosa" width="144" height="144" loading="lazy">
                     <div>
                         <h3>Roberto Sosa</h3>
                         <p class="role">Secretary</p>
                     </div>
                 </li>
             </ul>
+
+            <!-- New member boxes -->
+            <ul class="team board-grid" style="margin-top:14px">
+                <li class="person">
+                    <img src="photos/jimin.png" alt="Jimin Lim" width="144" height="144" loading="lazy">
+                    <div>
+                        <h3>Jimin Lim</h3>
+                        <p class="role">Potential New Member</p>
+                    </div>
+                </li>
+                <li class="person">
+                    <img src="photos/jaden.png" alt="Jaden Landavazo" width="144" height="144" loading="lazy">
+                    <div>
+                        <h3>Jaden Landavazo</h3>
+                        <p class="role">Potential New Member</p>
+                    </div>
+                </li>
+            </ul>
         </div>
     </section>
+
+    <!-- Fundraisers (NEW) -->
+    <section id="fundraisers" class="section alt">
+        <div class="container two-col">
+            <!-- LEFT COLUMN (carousel) -->
+            <div>
+                <div class="section-head">
+                    <h2>Fundraisers</h2>
+                    <p>Swipe on mobile, or use the arrow buttons/keys to move one flyer at a time.</p>
+                </div>
+
+                <div class="flyer-carousel" aria-label="Fundraiser flyers">
+                    <button class="carousel-btn prev" aria-label="Previous flyer" type="button">‹</button>
+
+                    <div
+                            id="flyer-track"
+                            class="flyer-track"
+                            tabindex="0"
+                            role="region"
+                            aria-roledescription="carousel"
+                            aria-label="Fundraiser flyers"
+                            aria-live="polite">
+                        <!-- Slides injected by JS -->
+                    </div>
+
+                    <button class="carousel-btn next" aria-label="Next flyer" type="button">›</button>
+                </div>
+
+                <div class="carousel-status" aria-live="polite">
+                    <span id="flyer-index">1</span> / <span id="flyer-total">0</span>
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN (text area) -->
+            <div class="fundraiser-text">
+                <h3>Breakdown & Highlights</h3>
+                <p>
+                    Here you can add explanations or reflections about each fundraiser —
+                    goals, turnout, lessons learned, or individual impact.
+                </p>
+                <p>You can later sync this text to each flyer if you want it to change automatically.</p>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Showcase -->
     <section id="work" class="section alt">
@@ -139,7 +241,13 @@
 
             <div class="grid">
                 <article class="card">
-                    <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=1200&auto=format&fit=crop" alt="Project screenshot 1" />
+                    <img loading="lazy"
+                         src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=1200&auto=format&fit=crop"
+                         srcset="
+                 https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=600 600w,
+                 https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=1200 1200w"
+                         sizes="(max-width: 800px) 100vw, 33vw"
+                         alt="Project screenshot 1" width="1200" height="800" />
                     <div class="card-body">
                         <h3>Feature One</h3>
                         <p>Short description of what this shows and why it matters.</p>
@@ -147,7 +255,13 @@
                     </div>
                 </article>
                 <article class="card">
-                    <img src="https://images.unsplash.com/photo-1551281044-8d8a9c86536b?q=80&w=1200&auto=format&fit=crop" alt="Project screenshot 2" />
+                    <img loading="lazy"
+                         src="https://images.unsplash.com/photo-1551281044-8d8a9c86536b?q=80&w=1200&auto=format&fit=crop"
+                         srcset="
+                 https://images.unsplash.com/photo-1551281044-8d8a9c86536b?q=80&w=600 600w,
+                 https://images.unsplash.com/photo-1551281044-8d8a9c86536b?q=80&w=1200 1200w"
+                         sizes="(max-width: 800px) 100vw, 33vw"
+                         alt="Project screenshot 2" width="1200" height="800" />
                     <div class="card-body">
                         <h3>Feature Two</h3>
                         <p>Highlight a graph, result, or unique interaction.</p>
@@ -155,7 +269,13 @@
                     </div>
                 </article>
                 <article class="card">
-                    <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop" alt="Project screenshot 3" />
+                    <img loading="lazy"
+                         src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop"
+                         srcset="
+                 https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=600 600w,
+                 https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200 1200w"
+                         sizes="(max-width: 800px) 100vw, 33vw"
+                         alt="Project screenshot 3" width="1200" height="800" />
                     <div class="card-body">
                         <h3>Feature Three</h3>
                         <p>Another cool component or insight from your project.</p>
@@ -166,71 +286,92 @@
         </div>
     </section>
 
+    <!-- Project Timeline -->
+    <section id="timeline" class="section">
+        <div class="container">
+            <div class="section-head">
+                <h2>General Timeline</h2>
+                <p>A quick look at how our project progressed throughout the semester.</p>
+            </div>
+
+            <ul class="timeline" role="list">
+                <li class="timeline-item">
+                    <h3>First Meetup</h3>
+                    <p><time datetime="2025-10-02">October 2, 2025</time></p>
+                </li>
+                <li class="timeline-item">
+                    <h3>Project Presentation</h3>
+                    <p><time datetime="2025-10-05">October 5, 2025</time></p>
+                </li>
+                <li class="timeline-item">
+                    <h3>First Fundraiser</h3>
+                    <p><time datetime="2025-10-15">October 15, 2025</time></p>
+                </li>
+                <li class="timeline-item">
+                    <h3>Re-Design</h3>
+                    <p><time datetime="2025-11-02">November 2, 2025</time></p>
+                </li>
+                <li class="timeline-item">
+                    <h3>Class Event</h3>
+                    <p><time datetime="2025-11-06">November 6, 2025</time></p>
+                </li>
+                <li class="timeline-item">
+                    <h3>First Building Day</h3>
+                    <p><time datetime="2025-11-07">November 7, 2025</time></p>
+                </li>
+                <li class="timeline-item">
+                    <h3>Final Presentation</h3>
+                    <p><time datetime="2025-11-09">November 9, 2025</time></p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
     <!-- Team Structure -->
-    <section id="teams" class="section alt">
+    <section id="team" class="section alt">
         <div class="container">
             <div class="section-head">
                 <h2>Team Structure</h2>
-                <p>Here’s how our chapter divided responsibilities across project teams.</p>
+                <p>Our chapter divided responsibilities into two main committees to organize the project effectively.</p>
             </div>
 
             <div class="team-grid">
-                <!-- Fundraising Team -->
+                <!-- Fundraising Committee -->
                 <div class="team-card">
-                    <h3>Fundraising Team</h3>
-                    <p><strong>Members:</strong> Ethan, Nancy, Jimin, Sehaj</p>
+                    <h3>Fundraising Committee</h3>
                     <ul>
-                        <li><strong>Food Handlers:</strong> Nancy, Sehaj, Ethan</li>
-                        <li><strong>Tabling People (Tuesdays 11–1:30 PM):</strong> Availability needed</li>
-                        <li><strong>Community Outreach & Forms:</strong> Nancy, Jimin</li>
-                        <li><strong>Gathering Supplies:</strong> Ethan, Roberto, Jaden</li>
-                        <li><strong>Advertising:</strong> Ethan, Sehaj</li>
+                        <li><strong>Event Coordinators:</strong> Ethan and Nancy</li>
+                        <li><strong>Advertising Leads:</strong> Ethan and Sehaj</li>
+                        <li><strong>Community Outreach &amp; Forms:</strong> Nancy, Ethan, Sehaj</li>
+                        <li><strong>Supplies Gatherers:</strong> Roberto, Ethan, Nancy</li>
+                        <li><strong>Finance Manager:</strong> Ethan</li>
                     </ul>
                 </div>
 
-                <!-- Design Team -->
+                <!-- Construction Committee -->
                 <div class="team-card">
-                    <h3>Design Team</h3>
-                    <p><strong>Members:</strong> Sehaj, Javier</p>
+                    <h3>Construction Committee</h3>
                     <ul>
-                        <li><strong>Solidworks:</strong> Sehaj</li>
-                        <li><strong>Statics:</strong> Javier, Sehaj</li>
-                        <li><strong>Measurements:</strong> Javier</li>
-                        <li><strong>Materials Research + Weatherproofing:</strong> Sehaj, Javier</li>
-                    </ul>
-                </div>
-
-                <!-- Assembly Team -->
-                <div class="team-card">
-                    <h3>Assembly Team</h3>
-                    <p><strong>Members:</strong> Roberto, Jimin, Jaden</p>
-                    <ul>
-                        <li><strong>Components + Circuits:</strong> Roberto, Javier</li>
-                        <li><strong>Coding:</strong> Jaden, Jimin</li>
-                    </ul>
-                </div>
-
-                <!-- Building Team -->
-                <div class="team-card">
-                    <h3>Building Team</h3>
-                    <p><strong>All members</strong> are encouraged to help</p>
-                    <ul>
-                        <li><strong>Equipment for Building:</strong> Roberto, Ethan</li>
-                        <li><strong>Transportation:</strong> Roberto</li>
+                        <li><strong>Research &amp; Development:</strong> Sehaj, Jaden, Roberto, Javier, Ethan</li>
+                        <li><strong>Lead Manager:</strong> Roberto</li>
+                        <li><strong>Construction:</strong> Jaden, Javier, Jimin, Nancy, Sehaj, Ethan</li>
+                        <li><strong>Components + Circuits + Coding:</strong> Javier, Jaden, Jimin, Roberto</li>
+                        <li><strong>Safety Officers:</strong> Roberto &amp; Ethan</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
+</main>
 
-
-    <footer class="site-footer">
+<!-- Footer (outside <main>) -->
+<footer class="site-footer">
     <div class="container footer-inner">
         <p>© <span id="year"></span> Theta Beta • Built for our final project</p>
         <a href="#top" class="to-top" aria-label="Back to top">↑</a>
     </div>
 </footer>
 
-<script src="./script.js?v=3"></script>
+<script src="./script.js?v=5" defer></script>
 </body>
 </html>
