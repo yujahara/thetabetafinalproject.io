@@ -5,21 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="486793d2-7a76-4000-b17c-cea77eff56bb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/photos/flyers/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/flyers/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/flyers/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/flyers/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/flyers/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/flyers/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/flyers/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/flyers/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/jaden.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/jimin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/timeline/first-meetup.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photos/convienience.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photos/sustain.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,9 +54,9 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/photos" />
       <recent name="$PROJECT_DIR$/photos/flyers" />
       <recent name="$PROJECT_DIR$/photos/timeline" />
-      <recent name="$PROJECT_DIR$/photos" />
     </key>
   </component>
   <component name="RunManager">
@@ -96,7 +85,8 @@
       <option name="presentableId" value="Default" />
       <updated>1762506429235</updated>
       <workItem from="1762506430643" duration="6116000" />
-      <workItem from="1762715566320" duration="2322000" />
+      <workItem from="1762715566320" duration="5340000" />
+      <workItem from="1762724752812" duration="1159000" />
     </task>
     <servers />
   </component>
